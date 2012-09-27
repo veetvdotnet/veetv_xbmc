@@ -45,24 +45,6 @@ class Generator:
                 # missing or poorly formatted addon.xml
                 print "Excluding %s for %s" % ( _path, e, )
         
-        #add repo addon
-        repo_addon_xml = """
-<addon id="repository.veetv_xbmc.dev" name="VeeTV XBMC Add-ons" version="0.1.1" provider-name="VeeTV.net">
-    <extension point="xbmc.addon.repository" name="VeeTV XBMC Add-ons Repository">
-        <info compressed="false">http://github.com/veetvdotnet/veetv_xbmc/raw/master/addons.xml</info>
-        <checksum>http://github.com/veetvdotnet/veetv_xbmc/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/veetvdotnet/veetv_xbmc/raw/master/repository/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Install add-ons from VeeTV XBMC repository</summary>
-        <description>Download and install XBMC add-ons by VeeTV.net</description>
-        <disclaimer>For personal use only</disclaimer>
-        <platform>all</platform>
-    </extension>
-</addon>
-"""
-        
-        addons_xml = addons_xml + repo_addon_xml
         # clean and add closing tag
         addons_xml = addons_xml.strip() + u"\n\n\n</addons>\n"
         # save file
