@@ -214,7 +214,7 @@ elif mode == 'film4vn':
     print response.read()
 
 elif mode == 'main':
-    #addon.show_small_popup('t0mm0 test addon', 'Is now loaded enjoy', 6000,logo)
+    addon.show_small_popup('t0mm0 test addon', 'Is now loaded enjoy', 6000,logo)
     
     addon.add_directory({'mode': 'giaitricom'}, {'title': 'GiaiTri.com'})
     addon.add_directory({'mode': 'film4vn'}, {'title': 'online.film4vn.us'})
