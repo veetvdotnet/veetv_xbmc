@@ -12,9 +12,5 @@
     <summary lang="en">Collection of commonly used addon routines</summary>
     <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
   </extension>
-  <extension point="xbmc.addon.repository" name="VeeTV XBMC Add-ons Repository">
-    <info compressed="false">http://github.com/veetvdotnet/veetv_xbmc/raw/master/addons.xml</info>
-    <checksum>http://github.com/veetvdotnet/veetv_xbmc/raw/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://github.com/veetvdotnet/veetv_xbmc/raw/master/repository/</datadir>
-  </extension>
+
 </addon>

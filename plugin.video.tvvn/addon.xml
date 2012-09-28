@@ -20,9 +20,5 @@
 		<disclaimer lang="en">All live streams are pulled from online providers and in no way represent my views or opinions. I also hold no control over the quality of the streams nor that of your internet connection :)</disclaimer>
 		<disclaimer lang="vi">Tất cả live streams được tải về từ các nhà cung cấp dịch vụ. Tác giả phần mềm này không chịu trách nhiệm về nội dung của chúng.</disclaimer>
 	</extension>
-<extension point="xbmc.addon.repository" name="VeeTV XBMC Add-ons Repository">
-    <info compressed="false">http://github.com/veetvdotnet/veetv_xbmc/raw/master/addons.xml</info>
-    <checksum>http://github.com/veetvdotnet/veetv_xbmc/raw/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://github.com/veetvdotnet/veetv_xbmc/raw/master/repository/</datadir>
-</extension>
+
 </addon>

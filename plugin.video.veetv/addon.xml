@@ -14,10 +14,6 @@
         <description>VeeTv.com</description>
         <platform>all</platform>
     </extension>
-    <extension point="xbmc.addon.repository" name="VeeTV XBMC Add-ons Repository">
-        <info compressed="false">http://github.com/veetvdotnet/veetv_xbmc/raw/master/addons.xml</info>
-        <checksum>http://github.com/veetvdotnet/veetv_xbmc/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/veetvdotnet/veetv_xbmc/raw/master/repository/</datadir>
-    </extension>
+
 </addon>
 
