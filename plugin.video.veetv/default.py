@@ -143,8 +143,8 @@ elif mode == 'giaitricom_tap_list':
     print "tap_page::" + str(tap_page)
     
     #get tap_num
-    pindex = html.find("var totalitems = ")
-    s1 = html[pindex+17:pindex+22]
+    pindex = html.find("var total = ")
+    s1 = html[pindex+12:pindex+16]
     tap_num = 1000
     try:
         tap_num = int(s1[0:s1.find(";")])   
@@ -178,9 +178,9 @@ elif mode == 'giaitricom_cat':
     
     html = utf8decode(net.http_GET(url1).content)
     
-    ret = common.parseDOM(html, "div", attrs = { "class": "s1'" })
+    ret = common.parseDOM(html, "div", attrs = { "class": "s1" })
     if not ret:
-        ret = common.parseDOM(html, "div", attrs = { "class": "s1_alt" })
+        ret = common.parseDOM(html, "div", attrs = { "class": "s1_alt rel=" })
         
     v_urls = common.parseDOM(ret, "a", attrs = { "class": "image_border" }, ret = "href")
     v_img_urls = common.parseDOM(ret, "img", attrs = { "class": "imgResize" }, ret = "src")
@@ -198,7 +198,8 @@ elif mode == 'giaitricom_cat':
 elif mode == 'giaitricom':
     url = "http://giaitri.com/new/index.php"
     html = utf8decode(net.http_GET(url).content)
-    ret = common.parseDOM(html, "div", attrs = { "class": "dropmenudiv" })
+    ret = common.parseDOM(html, "div", attrs = { "id": "mainmenu" })
+    print repr(ret)
     v_urls = common.parseDOM(ret, "a", ret = "href")
     v_names = common.parseDOM(ret, "a")
     for i in range(0, len(v_urls)):
