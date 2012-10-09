@@ -180,7 +180,7 @@ elif mode == 'giaitricom_cat':
     
     ret = common.parseDOM(html, "div", attrs = { "class": "s1" })
     if not ret:
-        ret = common.parseDOM(html, "div", attrs = { "class": "s1_alt rel=" })
+        ret = common.parseDOM(html, "div", attrs = { "class": "s1_alt" })
         
     v_urls = common.parseDOM(ret, "a", attrs = { "class": "image_border" }, ret = "href")
     v_img_urls = common.parseDOM(ret, "img", attrs = { "class": "imgResize" }, ret = "src")
